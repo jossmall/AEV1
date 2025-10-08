@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de Tareas</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>Título</td>
+        <td>Descripción</td>
+        <td>Fecha de Creación</td>
+        <td>Fecha de Vencimiento</td>
+    </tr>
+    <?php foreach ($listadoTareas as $row){ ?>
+    <tr>
+        <td>
+            <a href="/detail/<?php echo htmlspecialchars($row['id']) ?>"><?php echo htmlspecialchars($row["titulo"]) ?></a>
+        </td>
+        <td><?php echo htmlspecialchars($row["descripcion"]) ?></td>
+        <td><?php echo htmlspecialchars($row["fecha_creacion"]) ?></td>
+        <td><?php echo htmlspecialchars($row["fecha_vencimiento"]) ?></td>
+    </tr>
+    <?php } ?>
+</table>
+</body>
+</html>
+

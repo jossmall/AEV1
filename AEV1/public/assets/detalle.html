@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle de Tarea</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>Id</td>
+        <td>Título</td>
+        <td>Descripción</td>
+        <td>Fecha de Creación</td>
+        <td>Fecha de Vencimiento</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><?php echo htmlspecialchars($detalleTarea["id"]) ?></td>
+        <td><?php echo htmlspecialchars($detalleTarea["titulo"]) ?></td>
+        <td><?php echo htmlspecialchars($detalleTarea["descripcion"]) ?></td>
+        <td><?php echo htmlspecialchars($detalleTarea["fecha_creacion"]) ?></td>
+        <td><?php echo htmlspecialchars($detalleTarea["fecha_vencimiento"]) ?></td>
+        <td><a href="/">volver</a></td>
+    </tr>
+</table>
+</body>
+</html>
+

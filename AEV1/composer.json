@@ -1,0 +1,17 @@
+{
+  "name": "daw-dwes/aev1",
+  "authors": [
+    {
+      "name": "lluís-alandete",
+      "email": "lalandete@florida-uni.es"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "AEV1\\": "src/",
+      "Config\\": "config/"
+    }
+  },
+  "require": {
+  }
+}
