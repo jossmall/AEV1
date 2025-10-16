@@ -159,6 +159,12 @@ modificación y decisión tomada para facilitar la revisión.)*
 * Problema con el Dockerfile, me saltaba un error `0.218 E: Package 'apt-utils' has no installation candidate /   4 | >>> RUN apt-get -y install apt-utils.`, no he podido saber el motivo del error, y para poder avanzar, he copiado y reemplazado el Dockerfile del principio de curso.
 * Problema con la carpeta public: El contendor PHP no encontraba la carpeta `public/`. La ruta en volumes del `docker-compose.yml` no montaba la carpeta `public/`.
 Se ha solucionado asignando una nueva ruta: `- ../:/var/www/html` para poder acceder a la carpeta `public/` y lanzar `php -S 0.0.0.0:8010`.
+* No me arrancaba la BBDD -> había puesto el puerto 3306, corregido con el puerto 3310.
+* En la configuración del PS4 del .json, había puesto `"AEV1": "src/"`, corregido con `"AEV1\\": "src/"`
+* En el archivo Dispatcher.php use AEV1\Core\Interfaces\IRoute; había una P (APEV1), eliminado y corregido. (no sé si he sido yo o ya estaba).
+* Error: `Fatal error: Uncaught Error: Class "AEV1\Core\RouteCollection" not found in /var/www/html/AEV1/public/index.php:12 Stack trace: #0 {main} thrown in /var/www/html/AEV1/public/index.php on line 12` 
+las carpetas controllers, core, models, views estaban en minúscula la primera letra, las he cambiado por mayúscula la primera letra, (core -> Core ...), en los vídeos de clase no parecía saltar el error, supongo que será porque Linux/Ubuntu (el SO que utilizo) es case-sensitive.
+* En DataBase.php: `$database = self::$dbConfig["database"];` devolvía `Undefined array key `, cambiado a -> `$database = self::$dbConfig["dbname"];` con el mismo nombre configurado en dbConfig.json
 
 
 ### Ejercicio 2

@@ -2,7 +2,7 @@
     "name": "josep/aev1",
     "autoload": {
         "psr-4": {
-            "AEV1": "src/"
+            "AEV1\\": "src/"
         }
     },
     "authors": [
