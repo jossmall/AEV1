@@ -156,7 +156,10 @@ modificación y decisión tomada para facilitar la revisión.)*
 
 ### Ejercicio 1
 
-...
+* Problema con el Dockerfile, me saltaba un error `0.218 E: Package 'apt-utils' has no installation candidate /   4 | >>> RUN apt-get -y install apt-utils.`, no he podido saber el motivo del error, y para poder avanzar, he copiado y reemplazado el Dockerfile del principio de curso.
+* Problema con la carpeta public: El contendor PHP no encontraba la carpeta `public/`. La ruta en volumes del `docker-compose.yml` no montaba la carpeta `public/`.
+Se ha solucionado asignando una nueva ruta: `- ../:/var/www/html` para poder acceder a la carpeta `public/` y lanzar `php -S 0.0.0.0:8010`.
+
 
 ### Ejercicio 2
 

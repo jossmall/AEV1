@@ -1,4 +1,4 @@
-FROM php:8.3-apache
+FROM php:8.3-apache-bullseye
 WORKDIR /www/html
 RUN apt-get update
 RUN apt-get -y install apt-utils
