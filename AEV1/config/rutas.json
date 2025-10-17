@@ -12,7 +12,11 @@
     "action": "detail"
   },
   "/crear": {
-    "controller": "FormularioController" ,
+    "controller": "FormularioController",
     "action": "mostrar"
-  }
+  },
+  "/detalle/": {
+    "controller": "ErrorController",
+    "action": "mostrarError"
+}
 }
