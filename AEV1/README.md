@@ -176,9 +176,10 @@ Solucionado fijando el tipo de dato correcto dentro de la función.
 * Añadido a tareas.html el link para volver a home.
 * Modificado la ruta de tareas.html <a href="/detail/<?php... a <a href="/detalle/<?php para enlazarlo correctamente.
 * No he podido conseguir el último paso de /tareas. Sé que es con str_replace(), pasarle función $row['titulo'] y delvover $rutaTitulo.
+* No consigo insertar correctamente nuevas tareas.
 ### Ejercicio 3
 
-...
+
 
 ### Ejercicio 4
 

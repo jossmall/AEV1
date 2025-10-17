@@ -10,5 +10,9 @@
   "/detalle": {
     "controller": "DetalleController",
     "action": "detail"
+  },
+  "/crear": {
+    "controller": "FormularioController" ,
+    "action": "mostrar"
   }
 }

@@ -42,4 +42,12 @@ class Tareas
         $rutaTitulo = str_replace(" ", "/", $titulo);
         return "/detalle/" . $rutaTitulo;
     }
+
+    public function insertar(string $titulo, string $descripcion, string $fCreacion, string $fVencimiento)
+    {
+        $sql = "INSERT INTO tareas (titulo, descripcion, fecha_creacion, fecha_vencimiento)
+        VALUES ('$titulo', '$descripcion', '$fCreacion', '$fVencimiento')";
+        $db = DataBase::getInstance();
+        return $result = $db->executeSQL($sql);
+    }
 }
