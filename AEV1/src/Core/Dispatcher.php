@@ -3,6 +3,7 @@
 namespace AEV1\Core;
 
 
+use AEV1\Controllers\ErrorController;
 use AEV1\Core\Interfaces\IRequest;
 use AEV1\Core\Interfaces\IRoute;
 
@@ -48,7 +49,9 @@ class Dispatcher
         } else {
             //Al crear la ruta default este punto no se va a utilizar probablemente.
             //Si quereis probarla borrar los datos del archivo rutas.json correspondientes a default
-            echo "La ruta no esta definda";
+            //echo "La ruta no esta definda";
+            $errorController = new ErrorController();
+            $errorController->mostrar404();
         }
     }
 }

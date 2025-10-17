@@ -4,7 +4,7 @@ namespace AEV1\Views;
 
 class VistaError
 {
-    const HTML = __DIR__ . '/../../public/assets/mostrarError.html.html';
+    const HTML = __DIR__ . '/../../public/assets/mostrarError.html';
 
     /**
      * Renderiza la vista de listado de tareas.
