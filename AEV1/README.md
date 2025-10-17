@@ -169,7 +169,9 @@ las carpetas controllers, core, models, views estaban en minúscula la primera l
 
 ### Ejercicio 2
 
-...
+* Errores tipo: `Fatal error: Uncaught TypeError: AEV1\Views\VistaPrincipalTareas::render(): Argument #1 ($saludo) must be of type ?array, string given` 
+Solucionado fijando el tipo de dato correcto dentro del a función. 
+* Olvidado varias veces porner el tipo de dato devuelto en las funciones :void, :string.. 
 
 ### Ejercicio 3
 

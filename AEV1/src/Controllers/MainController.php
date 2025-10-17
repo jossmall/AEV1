@@ -2,8 +2,10 @@
 
 namespace AEV1\Controllers;
 
+use AEV1\Models\Home;
 use AEV1\Models\Tareas;
 use AEV1\Views\ListadoTareas;
+use AEV1\Views\VistaPrincipalTareas;
 
 class MainController
 {
@@ -16,4 +18,6 @@ class MainController
         $view = new ListadoTareas();
         $view->render($tarea->findAll());
     }
+
+
 }

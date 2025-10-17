@@ -1,5 +1,9 @@
 {
   "/": {
+    "controller": "HomeController",
+    "action": "welcome"
+  },
+  "/tareas": {
     "controller": "MainController",
     "action": "main"
   },
