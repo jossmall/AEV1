@@ -18,13 +18,22 @@
         <td>Fecha de Vencimiento</td>
     </tr>
     <?php foreach ($listadoTareas as $row){ ?>
+        <?php
+            $fVencimiento = $row["fecha_vencimiento"];
+            $fActual = date('Y-m-d');
+            if ($fVencimiento < $fActual) {
+            $style = "background-color: red;";
+            } else {
+            $style = "";
+            }
+        ?>
     <tr>
         <td>
             <a href="/detalle/<?php echo htmlspecialchars($row['id']) ?>"><?php echo htmlspecialchars($row["titulo"]) ?></a>
         </td>
         <td><?php echo htmlspecialchars($row["descripcion"]) ?></td>
         <td><?php echo htmlspecialchars($row["fecha_creacion"]) ?></td>
-        <td><?php echo htmlspecialchars($row["fecha_vencimiento"]) ?></td>
+        <td style="<?php echo $style ?>"><?php echo htmlspecialchars($row["fecha_vencimiento"]) ?></td>
         <td><a href="/detalle/<?php echo htmlspecialchars($row['id']) ?>">Ver detalle</a></td>
 
     </tr>

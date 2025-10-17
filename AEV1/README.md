@@ -178,6 +178,7 @@ Solucionado fijando el tipo de dato correcto dentro de la función.
 * No he podido conseguir el último paso de /tareas. Sé que es con str_replace(), pasarle función `$row['titulo'] y delvover $rutaTitulo`.
 * No consigo insertar correctamente nuevas tareas.
 * He intentado mostrar error en destalle/ sin id, pero no lo he conseguido.
+* Solucionado mostrar error 404 creando nuevo objeto en dispatcher
 ### Ejercicio 3
 
 

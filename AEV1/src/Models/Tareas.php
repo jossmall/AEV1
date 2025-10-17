@@ -26,7 +26,7 @@ class Tareas
     /**
      * Función que nos devuelve el contenido de una tarea para su id
      */
-    public function findById($id)
+    public function findById(int $id) : array
     {
         $sql = "SELECT * FROM tareas WHERE id=$id";
         //En este caso llamamos al método getInstance de la Clase DataBase y obtendremos una instancia de la misma,
@@ -35,14 +35,18 @@ class Tareas
         $result = $db->executeSQL($sql);
         return array_shift($result);
     }
-
-    // Función para obtener ruta a partir del título de tareas (/detalle/Sed nec metus/facilisis/lorem)
+    /**
+     * Función para obtener ruta a partir del título de tareas (/detalle/Sed nec metus/facilisis/lorem)
+     */
     public function generarRuta($titulo): string
     {
         $rutaTitulo = str_replace(" ", "/", $titulo);
         return "/detalle/" . $rutaTitulo;
     }
 
+    /**
+     * Función para insertar tareas
+     */
     public function insertar(string $titulo, string $descripcion, string $fCreacion, string $fVencimiento)
     {
         $sql = "INSERT INTO tareas (titulo, descripcion, fecha_creacion, fecha_vencimiento)
