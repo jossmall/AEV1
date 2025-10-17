@@ -35,4 +35,11 @@ class Tareas
         $result = $db->executeSQL($sql);
         return array_shift($result);
     }
+
+    // Función para obtener ruta a partir del título de tareas (/detalle/Sed nec metus/facilisis/lorem)
+    public function generarRuta($titulo): string
+    {
+        $rutaTitulo = str_replace(" ", "/", $titulo);
+        return "/detalle/" . $rutaTitulo;
+    }
 }

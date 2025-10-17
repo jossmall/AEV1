@@ -5,6 +5,11 @@
     <title>Listado de Tareas</title>
 </head>
 <body>
+<nav>
+    <ul>
+        <li><a href="/">Home</a> </li>
+    </ul>
+</nav>
 <table border="1">
     <tr>
         <td>Título</td>
@@ -15,11 +20,13 @@
     <?php foreach ($listadoTareas as $row){ ?>
     <tr>
         <td>
-            <a href="/detail/<?php echo htmlspecialchars($row['id']) ?>"><?php echo htmlspecialchars($row["titulo"]) ?></a>
+            <a href="/detalle/<?php echo htmlspecialchars($row['id']) ?>"><?php echo htmlspecialchars($row["titulo"]) ?></a>
         </td>
         <td><?php echo htmlspecialchars($row["descripcion"]) ?></td>
         <td><?php echo htmlspecialchars($row["fecha_creacion"]) ?></td>
         <td><?php echo htmlspecialchars($row["fecha_vencimiento"]) ?></td>
+        <td><a href="/detalle/<?php echo htmlspecialchars($row['id']) ?>">Ver detalle</a></td>
+
     </tr>
     <?php } ?>
 </table>

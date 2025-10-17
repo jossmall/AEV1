@@ -170,9 +170,12 @@ las carpetas controllers, core, models, views estaban en minúscula la primera l
 ### Ejercicio 2
 
 * Errores tipo: `Fatal error: Uncaught TypeError: AEV1\Views\VistaPrincipalTareas::render(): Argument #1 ($saludo) must be of type ?array, string given` 
-Solucionado fijando el tipo de dato correcto dentro del a función. 
-* Olvidado varias veces porner el tipo de dato devuelto en las funciones :void, :string.. 
-
+Solucionado fijando el tipo de dato correcto dentro de la función. 
+* Olvidado varias veces poner el tipo de dato devuelto en las funciones():void, :string.. 
+* Asignado el main a la ruta /tareas para visualizar todas las tareas.
+* Añadido a tareas.html el link para volver a home.
+* Modificado la ruta de tareas.html <a href="/detail/<?php... a <a href="/detalle/<?php para enlazarlo correctamente.
+* No he podido conseguir el último paso de /tareas. Sé que es con str_replace(), pasarle función $row['titulo'] y delvover $rutaTitulo.
 ### Ejercicio 3
 
 ...
