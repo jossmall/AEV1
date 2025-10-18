@@ -181,11 +181,12 @@ Solucionado fijando el tipo de dato correcto dentro de la función.
 * Solucionado mostrar error 404 creando nuevo objeto en dispatcher
 ### Ejercicio 3
 
+*Se ha realizado, pero no estoy seguro si es lo que se pide. 
 
 
 ### Ejercicio 4
 
-...
+Muestro formulario para enviar el id a eliminar, pero me pasa lo mismo que con el insert, no consigo recuperar el id e eliminar la tarea.
 
 ---
 
@@ -197,9 +198,9 @@ Pega aquí el enlace al vídeo de ScreenPal.
 
 ## Autorúbrica (rellenar)
 
-| Nivel        | Cumplido (Sí/No) | Observaciones (Indicar porque se considera que se ha cumplido y porque no) |
-|--------------|------------------|----------------------------------------------------------------------------|
-| Insuficiente |                  |                                                                            |
-| Suficiente   |                  |                                                                            |
-| Notable      |                  |                                                                            |
-| Excelente    |                  |                                                                            |
+| Nivel        | Cumplido (Sí/No) | Observaciones (Indicar porque se considera que se ha cumplido y porque no)                                                                                                                                                                                                                                                              |
+|--------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Insuficiente |                  | Ejercicio 1: completo.                                                                                                                                                                                                                                                                                                                  |
+| Suficiente   | si               | Ejercicio 2: Todo completo menos: ruta detalle sin ID, la ruta está creada pero no he conseguido mostrar el error.<br/> En /tares se ha puesto un enlace para ver el detalle tares pero no con `/detalle/nombre/mas/de/una/palabra/en/el/nombre`.<br/>En /crear, muestro el formulario pero no he conseguido insertar los datos nuevos. |
+| Notable      |                  | Ejercicio 3: La lógica introducida, pinta todas las celdas con fecha vencida.                                                                                                                                                                                                                                                           |
+| Excelente    |                  | Ejercicio 4: Lo mismo que el insert, se muestra el formulario para eliminar la tarea, pero no he conseguido que se elimine de tareas.                                                                                                                                                                                                   |

@@ -15,6 +15,9 @@ class DetalleController
         if (is_null($id)) {
             //Hemos recibido un nulo por id, por lo tanto le enviamos también nulo para que no se muestren datos.
             $data = null;
+            //$errorController = new ErrorController();
+            //$errorController->mostrarError();
+
         } else {
             //En este caso el controller únicamente debe preocuparse de hablar con el Modal y le da igual como se
             //conecta este con la BB.DD.

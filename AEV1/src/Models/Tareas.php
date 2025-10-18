@@ -54,4 +54,14 @@ class Tareas
         $db = DataBase::getInstance();
         return $result = $db->executeSQL($sql);
     }
+
+    /**
+     * Función para eliminar tarea
+     */
+    public function deleteById(int $id)
+    {
+        $sql = "DELETE FROM tareas WHERE id=$id";
+        $db = DataBase::getInstance();
+        return $result = $db->executeSQL($sql);
+    }
 }

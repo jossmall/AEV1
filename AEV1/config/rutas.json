@@ -18,5 +18,9 @@
   "/detalle/": {
     "controller": "ErrorController",
     "action": "mostrarError"
-}
+},
+  "/borrar": {
+    "controller": "EliminarController",
+    "action": "mostrar"
+  }
 }
